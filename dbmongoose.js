@@ -2,7 +2,9 @@ const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
 app.use(express.json());
-mongoose.connect('mongodb://127.0.0.1:27017/myDatabase');
+mongoose.connect(
+  'mongodb+srv://singhjasdeep1602:iamironman%40143RDJ@cluster0.ausbbux.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
+);
 
 const BookScheme = new mongoose.Schema({
   title: String,
